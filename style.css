@@ -1,0 +1,51 @@
+body{
+    background-color: aqua;
+}
+
+.main-heading{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.game-container{
+    margin-top: 40px;
+    background-color: yellow;
+    border-width: 5px;
+    border-color: black;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.cell{
+    height:100px;
+    width: 100px;
+    margin: 0px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.cell:hover{
+    background-color: brown;
+}
+
+.player-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.img{
+    height: 40px;
+}
+
+.size{
+    height: 80px;
+    
+}

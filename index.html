@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="style.css">
+        <title>tic-tac-toe</title>
+    </head>
+    <body>
+        <div class="main-heading">TIC-TAC-TOE</div>
+        <div class="container">
+            <table border="1"   class="game-container">
+            <tr>
+                <td height="100" width="100"><button class="cell cell-00" onclick="
+                        updateMatrix(0,0);
+                        
+                    " ></button></td>
+                <td height="100" width="100"><button class="cell cell-01" onclick="
+                    updateMatrix(0,1);"></button></td>
+                <td height="100" width="100"><button class="cell cell-02" onclick="
+                    updateMatrix(0,2);"></button></td>
+
+            </tr>
+            <tr>
+                <td height="100" width="100"><button class="cell cell-10" onclick="
+                    updateMatrix(1,0);"></button></td>
+                <td height="100" width="100"><button class="cell cell-11" onclick="
+                    updateMatrix(1,1);"></button></td>
+                <td height="100" width="100"><button class="cell cell-12" onclick="
+                    updateMatrix(1,2);"></button></td>
+
+            </tr>
+            <tr>
+                <td height="100" width="100"><button class="cell cell-20" onclick="
+                    updateMatrix(2,0);"></button></td>
+                <td height="100" width="100"><button class="cell cell-21" onclick="
+                    updateMatrix(2,1);"></button></td>
+                <td height="100" width="100"><button class="cell cell-22" onclick="
+                    updateMatrix(2,2);"></button></td>
+
+            </tr>
+        </table>
+        </div>
+        <div class="player-div">
+        <div>Player 1 :
+            <button class="choose-button-x" onclick="
+                    player1='X';
+                    player2='O';
+                    resetGame();
+                "><img class="img" src="cross-removebg-preview.png"></button>
+            <button class="choose-button-o" onclick="
+                    player1='O';
+                    player2='X';
+                    resetGame();
+            "><img class="img" src="null-removebg-preview.png"></button>
+        </div>
+        
+        </div>
+
+
+        <script src="script.js" charset="utf-8"></script>
+    </body>
+</html>
